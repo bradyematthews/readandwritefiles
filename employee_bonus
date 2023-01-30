@@ -1,0 +1,7 @@
+import csv
+import os
+import sys
+
+EMPFILE = 'EmployeePay.csv'
+
+infile = open 
