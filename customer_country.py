@@ -6,12 +6,13 @@ import sys
 CUSTFILE = 'customers.csv'
 
 
-infile = open(CUSTFILE, 'r', newline = "")
+infile = open(CUSTFILE, 'r', newline = '')
 
 csvfile = csv.reader(infile, delimiter =',')
 
 outfile = open('customer_country.csv', 'w', newline = '')
 next(csvfile)
+
 writer = csv.writer(outfile)
 header = ['Customer Name', 'Country']
 writer.writerow(header)
